@@ -17,6 +17,6 @@ $ npm install -g twala-cli
 **Note:**  For development environments, use `./bin/run` instead of `twala-cli` when inside the project's directory to run commands without installing the package via npm.
 
 ```sh-session
-$ twala-cli (-d /path/to/file|--document=/path/to/document) (-p /path/to/proof|--proof=/path/to/proof)
+$ twala-cli (-p /path/to/proof|--proof=/path/to/proof) (-d /path/to/file|--document=/path/to/document)
 $ twala-cli (-v|--version|version)
 $ twala-cli (-h|--help|help)

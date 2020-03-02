@@ -10,7 +10,13 @@
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
-    "@oclif/plugin-help": "^2.2.3"
+    "@oclif/plugin-help": "^2.2.3",
+    "cli-ux": "^5.4.5",
+    "crypto-js": "^4.0.0",
+    "file-to-hash": "0.0.1",
+    "fs": "0.0.1-security",
+    "merkletreejs": "^0.1.11",
+    "web3": "^1.2.6"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.22.2",
