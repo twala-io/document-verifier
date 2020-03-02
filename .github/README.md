@@ -2,7 +2,6 @@
 
 Command-line interface for proving Twala documents.
 
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/twala-cli.svg)](https://npmjs.org/package/twala-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/twala-cli.svg)](https://npmjs.org/package/twala-cli)
 [![License](https://img.shields.io/npm/l/twala-cli.svg)](https://github.com/twala-io/twala-cli/blob/master/package.json)
