@@ -12,11 +12,12 @@ Command-line interface for proving Twala documents.
 $ npm install -g twala-cli
 ```
 
-# Usage
-
-**Note:**  For development environments, use `./bin/run` instead of `twala-cli` when inside the project's directory to run commands without installing the package via npm.
+# Commands
 
 ```sh-session
-$ twala-cli (-p /path/to/proof|--proof=/path/to/proof) (-d /path/to/file|--document=/path/to/document)
+$ twala-cli
 $ twala-cli (-v|--version|version)
 $ twala-cli (-h|--help|help)
+```
+
+**Note:**  You will be asked to provide three parameters, an Ethereum node url, the proof file path, and the document file path. Currently, as we are on the process of deploying the smart contract on the main Ethereum network, please use a Ropsten test network node url instead. You can provision your own node on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io/).
