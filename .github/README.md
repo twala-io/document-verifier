@@ -2,6 +2,7 @@
 
 Command-line interface for proving Twala documents.
 
+![Node.js CI](https://github.com/twala-io/twala-cli/workflows/Node.js%20CI/badge.svg)
 [![Version](https://img.shields.io/npm/v/twala-cli.svg)](https://npmjs.org/package/twala-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/twala-cli.svg)](https://npmjs.org/package/twala-cli)
 [![License](https://img.shields.io/npm/l/twala-cli.svg)](https://github.com/twala-io/twala-cli/blob/master/package.json)
