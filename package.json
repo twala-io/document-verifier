@@ -1,7 +1,7 @@
 {
   "name": "twala-cli",
   "description": "Command-line interface for proving documents in Twala.",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": " @apquinit",
   "bin": {
     "twala-cli": "./bin/run"
@@ -36,7 +36,7 @@
   ],
   "homepage": "https://github.com/twala-io/twala-cli",
   "keywords": [
-    "oclif"
+    "twala"
   ],
   "license": "MIT",
   "main": "src/index.js",
