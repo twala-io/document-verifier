@@ -1,5 +1,3 @@
-const path = require('path')
-const ProofHolder = require(path.resolve( __dirname, '../contracts/proof-holder.js'))
 const {Command, flags} = require('@oclif/command')
 const {pathToHash} = require('file-to-hash')
 const {MerkleTree} = require('merkletreejs')
@@ -10,10 +8,11 @@ const Web3 = require('web3')
 
 class TwalaCliCommand extends Command {
   async run() {
-    const web3 = new Web3('https://ropsten.infura.io/v3/39413dbed2b246e282c3f2d82faca546')
-    const {flags} = this.parse(TwalaCliCommand)
-    const proofPath = flags.proof
-    const documentPath = flags.document
+    const web3Provider = await cli.prompt('Node Provider (url)')
+    const web3 = new Web3(web3Provider)
+    const proofPath = await cli.prompt('Proof File (path)')
+    const documentPath = await cli.prompt('Document File (path)')
+    this.log()
     cli.action.start('generating proof hash')
     await cli.wait(3000)
     const initialProofHash = await pathToHash('sha256', proofPath)
@@ -26,8 +25,8 @@ class TwalaCliCommand extends Command {
     cli.action.stop()
     cli.action.start('processing smart contracts')
     await cli.wait(3000)
-    const proofHolderContractAbi = ProofHolder.abi
-    const proofHolderContractAddress = ProofHolder.address
+    const proofHolderContractAbi = [{constant: true, inputs: [{name: '_hash', type: 'bytes32'}], name: 'retrieveProof', outputs: [{name: '', type: 'bytes32'}, {name: '', type: 'string'}, {name: '', type: 'string'}], payable: false, stateMutability: 'view', type: 'function'}, {constant: false, inputs: [{name: '_hash', type: 'bytes32'}, {name: '_root', type: 'string'}, {name: '_timestamp', type: 'string'}], name: 'recordProof', outputs: [], payable: false, stateMutability: 'nonpayable', type: 'function'}]
+    const proofHolderContractAddress = '0xBc0DE9c1e18918aEE53C4CD54bf319CF09577D2c'
     const proofHolderContract = new web3.eth.Contract(proofHolderContractAbi, proofHolderContractAddress)
     cli.action.stop()
     cli.action.start('searching the Ethereum main network')
@@ -76,8 +75,6 @@ Prove the legitimacy of a Twala document directly from the Main Ethereum network
 TwalaCliCommand.flags = {
   version: flags.version({char: 'v'}),
   help: flags.help({char: 'h'}),
-  document: flags.string({char: 'd', description: 'path to document'}),
-  proof: flags.string({char: 'p', description: 'path to proof'}),
 }
 
 module.exports = TwalaCliCommand
