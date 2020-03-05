@@ -1,8 +1,8 @@
 {
   "name": "twala-cli",
   "description": "Command-line interface for proving documents in Twala.",
-  "version": "0.0.1",
-  "author": " @apquinit",
+  "version": "0.0.2",
+  "author": "@apquinit",
   "bin": {
     "twala-cli": "./bin/run"
   },
