@@ -1,6 +1,6 @@
 # Twala CLI
 
-Command-line interface for proving Twala documents.
+Command-line interface for attesting Twala documents.
 
 ![Node.js CI](https://github.com/twala-io/twala-cli/workflows/Node.js%20CI/badge.svg)
 [![Version](https://img.shields.io/npm/v/twala-cli.svg)](https://npmjs.org/package/twala-cli)
@@ -17,8 +17,8 @@ $ npm install -g twala-cli
 
 ```sh-session
 $ twala-cli
-$ twala-cli (-v|--version|version)
-$ twala-cli (-h|--help|help)
+$ twala-cli (-v|--version)
+$ twala-cli (-h|--help)
 ```
 
 **Note:**  You will be asked to provide three parameters, an Ethereum node url, the proof file path, and the document file path. Currently, as we are on the process of deploying the smart contract on the main Ethereum network, please use a Ropsten test network node url instead. You can provision your own node on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io/).

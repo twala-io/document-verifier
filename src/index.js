@@ -68,8 +68,8 @@ class TwalaCliCommand extends Command {
   }
 }
 
-TwalaCliCommand.description = `Command-line interface for proving Twala documents
-Prove the legitimacy of a Twala document directly from the Main Ethereum network
+TwalaCliCommand.description = `Command-line interface for attesting Twala documents
+Attest the legitimacy of a Twala document directly from the Main Ethereum network
 `
 
 TwalaCliCommand.flags = {
