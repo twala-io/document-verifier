@@ -29,7 +29,7 @@ class TwalaCliCommand extends Command {
     const proofHolderContractAddress = '0xBc0DE9c1e18918aEE53C4CD54bf319CF09577D2c'
     const proofHolderContract = new web3.eth.Contract(proofHolderContractAbi, proofHolderContractAddress)
     cli.action.stop()
-    cli.action.start('searching the Ethereum main network')
+    cli.action.start('searching Ethereum network')
     const proofHolderProof = await proofHolderContract.methods.retrieveProof(proofHash).call()
     const proof = {
       hash: proofHolderProof[0],
