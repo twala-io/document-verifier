@@ -1,6 +1,6 @@
 {
   "name": "twala-cli",
-  "description": "Command-line interface for proving documents in Twala.",
+  "description": "Command-line interface for attesting Twala documents.",
   "version": "0.0.2",
   "author": "@twala-io",
   "bin": {
