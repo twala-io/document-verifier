@@ -1,12 +1,12 @@
 {
-  "name": "twala-cli",
-  "description": "Command-line interface for attesting Twala documents.",
-  "version": "0.0.3",
-  "author": "@twala-io",
+  "name": "@twala-io/twala-verify",
+  "description": "Command-line interface for verifying Twala documents.",
+  "version": "1.0.0",
+  "author": "Twala",
   "bin": {
-    "twala-cli": "./bin/run"
+    "twala-verify": "./bin/run"
   },
-  "bugs": "https://github.com/twala-io/twala-cli/issues",
+  "bugs": "https://github.com/twala-io/twala-verify/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
@@ -34,16 +34,19 @@
     "/bin",
     "/src"
   ],
-  "homepage": "https://github.com/twala-io/twala-cli",
+  "homepage": "https://github.com/twala-io/twala-verify",
   "keywords": [
     "twala"
   ],
   "license": "MIT",
   "main": "src/index.js",
   "oclif": {
-    "bin": "twala-cli"
+    "bin": "twala-verify"
   },
-  "repository": "twala-io/twala-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twala-io/twala-verify.git"
+  },
   "scripts": {
     "posttest": "eslint .",
     "prepack": "oclif-dev readme",
