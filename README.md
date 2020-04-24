@@ -3,9 +3,9 @@
 Command-line interface for verifying Twala documents.
 
 ![Node.js CI](https://github.com/twala-io/twala-verify/workflows/Node.js%20CI/badge.svg)
-[![Version](https://img.shields.io/npm/v/twala-io/twala-verify.svg)](https://npmjs.org/package/twala-io/twala-verify)
-[![Downloads/week](https://img.shields.io/npm/dw/twala-io/twala-verify.svg)](https://npmjs.org/package/twala-io/twala-verify)
-[![License](https://img.shields.io/npm/l/twala-io/twala-verify.svg)](https://github.com/twala-io/twala-verify/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@twala-io/twala-verify.svg)](https://npmjs.org/package/@twala-io/twala-verify)
+[![Downloads/week](https://img.shields.io/npm/dw/@twala-io/twala-verify.svg)](https://npmjs.org/package/@twala-io/twala-verify)
+[![License](https://img.shields.io/npm/l/@twala-io/twala-verify.svg)](https://github.com/twala-io/twala-verify/blob/master/package.json)
 
 # Installation
 
