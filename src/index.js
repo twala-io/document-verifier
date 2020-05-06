@@ -6,7 +6,7 @@ const FileStream = require('fs')
 const {cli} = require('cli-ux')
 const Web3 = require('web3')
 
-class TwalaCliCommand extends Command {
+class TwalaVerifyCommand extends Command {
   async run() {
     const web3Provider = await cli.prompt('Node Provider (url)')
     const web3 = new Web3(web3Provider)
@@ -26,7 +26,7 @@ class TwalaCliCommand extends Command {
     cli.action.start('processing smart contracts')
     await cli.wait(3000)
     const proofHolderContractAbi = [{constant: true, inputs: [{name: '_hash', type: 'bytes32'}], name: 'retrieveProof', outputs: [{name: '', type: 'bytes32'}, {name: '', type: 'string'}, {name: '', type: 'string'}], payable: false, stateMutability: 'view', type: 'function'}, {constant: false, inputs: [{name: '_hash', type: 'bytes32'}, {name: '_root', type: 'string'}, {name: '_timestamp', type: 'string'}], name: 'recordProof', outputs: [], payable: false, stateMutability: 'nonpayable', type: 'function'}]
-    const proofHolderContractAddress = '0xBc0DE9c1e18918aEE53C4CD54bf319CF09577D2c'
+    const proofHolderContractAddress = '0x07834b0C7B47892EafD0403461366292DB050e73'
     const proofHolderContract = new web3.eth.Contract(proofHolderContractAbi, proofHolderContractAddress)
     cli.action.stop()
     cli.action.start('searching Ethereum network')
@@ -68,13 +68,13 @@ class TwalaCliCommand extends Command {
   }
 }
 
-TwalaCliCommand.description = `Command-line interface for attesting Twala documents
-Attest the legitimacy of a Twala document directly from the Main Ethereum network
+TwalaVerifyCommand.description = `Command-line interface for verifying Twala documents
+Verify the legitimacy of a Twala document directly from the Main Ethereum network
 `
 
-TwalaCliCommand.flags = {
+TwalaVerifyCommand.flags = {
   version: flags.version({char: 'v'}),
   help: flags.help({char: 'h'}),
 }
 
-module.exports = TwalaCliCommand
+module.exports = TwalaVerifyCommand

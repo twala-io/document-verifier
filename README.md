@@ -21,4 +21,4 @@ $ twala-verify (-v|--version)
 $ twala-verify (-h|--help)
 ```
 
-**Note:**  You will be asked to provide three parameters, an Ethereum node url, the proof file path, and the document file path. Currently, as we are on the process of deploying the smart contract on the main Ethereum network, use a Ropsten test network node url instead. You can provision your own node on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io).
+**Note:**  You will be asked to provide three parameters, an Ethereum node url, the proof file path, and the document file path. For the Ethereum node url, you can provision your own geth instance on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io).
