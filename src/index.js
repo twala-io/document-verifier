@@ -55,12 +55,10 @@ class TwalaVerifyCommand extends Command {
           if (proofContent.hash === documentHash) {
             this.log(`Document Hash: ${proofContent.hash}`)
             this.log(`Document Timestamp: ${proofContent.timestamp}`)
-          } else {
-            this.log('document invalid')
           }
         }
       } else {
-        this.log('merkle root invalid')
+        this.log('proof invalid')
       }
     } else {
       this.log('proof invalid')
