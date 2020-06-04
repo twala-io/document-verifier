@@ -30,3 +30,15 @@ $ twala-verify
 ```
 
 **Note:**  You will be asked to provide three inputs, an Ethereum node url, the proof file path, and the document file path. For the Ethereum node url, you can provision your own geth instance on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io).
+
+# Contributing
+
+Keep it simple. Keep it minimal. Don't put every single feature just because you can.
+
+# Author
+
+* Alexander Paul P. Quinit
+
+# License
+
+This project is licensed under the GNU General Public License v3.0.
