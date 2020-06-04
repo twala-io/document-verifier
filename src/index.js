@@ -68,7 +68,7 @@ class TwalaVerifyCommand extends Command {
 }
 
 TwalaVerifyCommand.description = `Command-line interface for verifying Twala documents
-Verify the legitimacy of a Twala document directly from the Main Ethereum network
+Verify the legitimacy of a Twala document directly from the main Ethereum network
 `
 
 TwalaVerifyCommand.flags = {
