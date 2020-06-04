@@ -14,7 +14,7 @@ Command-line interface for verifying Twala documents.
 # Installation
 
 ```sh-session
-$ npm install -g twala-verify
+$ npm install -g @twala-io/twala-verify
 ```
 
 # Commands
