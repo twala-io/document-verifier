@@ -1,4 +1,4 @@
-# Twala Verify
+# Twala CLI
 
 Command-line interface for verifying Twala documents.
 
