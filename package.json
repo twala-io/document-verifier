@@ -1,7 +1,7 @@
 {
   "name": "@twala-io/twala-cli",
   "description": "Command-line interface for verifying Twala documents.",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "Twala",
   "bin": {
     "twala-cli": "./bin/run"
