@@ -16,6 +16,7 @@
     "file-to-hash": "0.0.1",
     "fs": "0.0.1-security",
     "merkletreejs": "^0.1.11",
+    "moment": "^2.27.0",
     "web3": "^1.2.6"
   },
   "devDependencies": {
