@@ -23,13 +23,19 @@ $ npm install -g @twala-io/twala-cli
 
 ## Commands
 
-Run the command `twala-cli` and provide the required inputs.
+Run the command `twala-cli` and provide the required arguments.
+
+### Verify
 
 ```sh-session
-$ twala-cli
+$ twala-cli --document=path/to/document --proof=path/to/proof
 ```
 
-**Note:**  You will be asked to provide three inputs, an Ethereum node url, the proof file path, and the document file path. For the Ethereum node url, you can provision your own geth instance on your machine, or you can use a third-party node-as-a-service provider such as [Infura](https://infura.io).
+### Help
+
+```sh-session
+$ twala-cli --help
+```
 
 ## Contributing
 
