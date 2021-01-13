@@ -11,6 +11,7 @@
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
     "@oclif/plugin-help": "^2.2.3",
+    "axios": "^0.21.1",
     "cli-ux": "^5.4.5",
     "crypto-js": "^4.0.0",
     "file-to-hash": "0.0.1",
