@@ -10,7 +10,7 @@ const Web3 = require('web3')
 
 class TwalaVerifyCommand extends Command {
   async run() {
-    let verifyUrl = 'https://sign-server.twala.io/documents/verifyy'
+    let verifyUrl = 'https://sign-server.twala.io/documents/verify'
     let web3 = new Web3('https://mainnet.infura.io/v3/6e6757fd474045ef8c2d8b984e6c1a81')
     let proofHolderContractAddress = '0x07834b0C7B47892EafD0403461366292DB050e73'
     let { flags } = this.parse(TwalaVerifyCommand)
