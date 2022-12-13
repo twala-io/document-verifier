@@ -1,10 +1,10 @@
 {
   "name": "@twala-io/document-verifier",
   "description": "Command-line interface for verifying Twala Sign documents.",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "author": "Twala",
   "bin": {
-    "document-verifier": "./bin/run"
+    "document-verifier": "bin/run"
   },
   "bugs": "https://github.com/twala-io/document-verifier/issues",
   "dependencies": {
