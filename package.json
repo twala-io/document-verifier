@@ -6,7 +6,9 @@
   "bin": {
     "document-verifier": "bin/run"
   },
-  "bugs": "https://github.com/twala-io/document-verifier/issues",
+  "bugs": {
+    "url": "https://github.com/twala-io/document-verifier/issues"
+  },
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
@@ -40,7 +42,7 @@
   "keywords": [
     "twala"
   ],
-  "license": "GNU GPLv3",
+  "license": "GPL-3.0",
   "main": "src/index.js",
   "oclif": {
     "bin": "document-verifier"
