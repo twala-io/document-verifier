@@ -1,12 +1,12 @@
 {
-  "name": "@twala-io/twala-cli",
-  "description": "Command-line interface for verifying Twala documents.",
+  "name": "@twala-io/document-verifier",
+  "description": "Command-line interface for verifying Twala Sign documents.",
   "version": "2.0.2",
   "author": "Twala",
   "bin": {
-    "twala-cli": "./bin/run"
+    "document-verifier": "./bin/run"
   },
-  "bugs": "https://github.com/twala-io/twala-cli/issues",
+  "bugs": "https://github.com/twala-io/document-verifier/issues",
   "dependencies": {
     "@oclif/command": "^1.5.19",
     "@oclif/config": "^1.14.0",
@@ -36,18 +36,18 @@
     "/bin",
     "/src"
   ],
-  "homepage": "https://github.com/twala-io/twala-cli",
+  "homepage": "https://github.com/twala-io/document-verifier",
   "keywords": [
     "twala"
   ],
   "license": "GNU GPLv3",
   "main": "src/index.js",
   "oclif": {
-    "bin": "twala-cli"
+    "bin": "document-verifier"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twala-io/twala-cli.git"
+    "url": "git+https://github.com/twala-io/document-verifier.git"
   },
   "scripts": {
     "posttest": "eslint .",

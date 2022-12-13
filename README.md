@@ -1,10 +1,10 @@
-# Twala CLI
+# Document Verifier
 
-Command-line interface for verifying Twala documents.
+Command-line interface for verifying Twala Sign documents.
 
-[![Version](https://img.shields.io/npm/v/@twala-io/twala-cli.svg)](https://npmjs.org/package/@twala-io/twala-cli)
-[![Downloads/week](https://img.shields.io/npm/dw/@twala-io/twala-cli.svg)](https://npmjs.org/package/@twala-io/twala-cli)
-[![License](https://img.shields.io/npm/l/@twala-io/twala-cli.svg)](https://github.com/twala-io/twala-cli/blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@twala-io/document-verifier.svg)](https://npmjs.org/package/@twala-io/document-verifier)
+[![Downloads/week](https://img.shields.io/npm/dw/@twala-io/document-verifier.svg)](https://npmjs.org/package/@twala-io/document-verifier)
+[![License](https://img.shields.io/npm/l/@twala-io/document-verifier.svg)](https://github.com/twala-io/document-verifier/blob/master/package.json)
 
 ## Requirements
 
@@ -15,26 +15,26 @@ Before proceeding, please make sure that the below requirements is installed and
 
 ## Installation
 
-Open your terminal (for Mac and Linux) or command prompt (for Windows) and install the `twala-cli` npm package.
+Open your terminal (for Mac and Linux) or command prompt (for Windows) and install the `document-verifier` npm package.
 
 ```sh-session
-$ npm install -g @twala-io/twala-cli
+$ npm install -g @twala-io/document-verifier
 ```
 
 ## Commands
 
-Run the command `twala-cli` and provide the required arguments.
+Run the command `document-verifier` and provide the required arguments.
 
 ### Verify
 
 ```sh-session
-$ twala-cli --document=path/to/document --proof=path/to/proof
+$ document-verifier --document=path/to/document --proof=path/to/proof
 ```
 
 ### Help
 
 ```sh-session
-$ twala-cli --help
+$ document-verifier --help
 ```
 
 ## Contributing
