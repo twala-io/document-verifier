@@ -15,26 +15,12 @@ Before proceeding, please make sure that the below requirements is installed and
 
 ## Installation
 
-Open your terminal (for Mac and Linux) or command prompt (for Windows) and install the `document-verifier` npm package.
+Open your terminal (for Mac and Linux) or command prompt (for Windows) and install the package.
 
 ```sh-session
-$ npm install -g @twala-io/document-verifier
-```
-
-## Commands
-
-Run the command `document-verifier` and provide the required arguments.
-
-### Verify
-
-```sh-session
-$ document-verifier --document=path/to/document --proof=path/to/proof
-```
-
-### Help
-
-```sh-session
-$ document-verifier --help
+$ npm install stripe --save
+# or
+$ yarn add stripe
 ```
 
 ## Contributing
